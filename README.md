@@ -66,3 +66,17 @@ System.out.println(Math.random());  //Output 0,2977274678982116
 ~~~
 int randomNum = (int)(Math.random() * 101);  // 0 to 100
 ~~~
+# Java Continue
+
+* A continueinstrução interrompe uma iteração (no loop), se uma condição especificada ocorrer, e continua com a próxima iteração no loop.
+
+Este exemplo pula o valor de 4:
+
+~~~
+for (int i = 0; i < 10; i++) {
+  if (i == 4) {
+    continue;
+  }
+  System.out.println(i);
+}
+~~~
