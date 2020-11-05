@@ -60,3 +60,9 @@ System.out.println(Math.min(5, 10));  //Output 5
 ~~~
 System.out.println(Math.random());  //Output 0,2977274678982116
 ~~~
+
+* Para obter mais controle sobre o número aleatório, por exemplo, você deseja apenas um número aleatório entre 0 e 100, você pode usar a seguinte fórmula:
+
+~~~
+int randomNum = (int)(Math.random() * 101);  // 0 to 100
+~~~
