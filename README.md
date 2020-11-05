@@ -8,7 +8,9 @@ double d1 = 12E4d;
 System.out.println(f1);
 System.out.println(d1);
 ~~~
-# Comprimento da String 
+# String
+
+## Comprimento
 
 * Uma String em Java é, na verdade, um objeto que contém métodos que podem realizar certas operações em strings. Por exemplo, o comprimento de uma string pode ser encontrado com o length()método:
 
