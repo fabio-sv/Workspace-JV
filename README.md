@@ -52,3 +52,7 @@ System.out.println(Math.max(5, 10));  //Output 10
 ~~~
 System.out.println(Math.min(5, 10));  //Output 5
 ~~~
+
+## Números aleatórios
+
+*Math.random() retorna um número aleatório entre 0,0 (inclusivo) e 1,0 (exclusivo):
