@@ -49,3 +49,7 @@ public class MyClass {
   }
 }
 ~~~
+
+## Math.min ( x, y )
+
+* O método pode ser usado para encontrar o menor valor de de x e y :Math.min(x,y)
