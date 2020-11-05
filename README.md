@@ -48,7 +48,7 @@ System.out.println(Math.max(5, 10));  //Output 10
 
 ## Math.min ( x, y )
 
-* O método pode ser usado para encontrar o menor valor de de x e y :Math.min(x,y)
+* O método pode ser usado para encontrar o menor valor de de x e y :`Math.min(x,y)`
 ~~~
 System.out.println(Math.min(5, 10));  //Output 5
 ~~~
