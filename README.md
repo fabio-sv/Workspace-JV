@@ -55,4 +55,8 @@ System.out.println(Math.min(5, 10));  //Output 5
 
 ## Números aleatórios
 
-*Math.random() retorna um número aleatório entre 0,0 (inclusivo) e 1,0 (exclusivo):
+* `Math.random()` retorna um número aleatório entre 0,0 (inclusivo) e 1,0 (exclusivo):
+
+~~~
+System.out.println(Math.random());  //Output 0,2977274678982116
+~~~
