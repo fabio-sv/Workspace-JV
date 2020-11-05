@@ -1,4 +1,4 @@
-package metodosSettersGetters;
+package SettersGetters;
 
 public class Aluno {
 
