@@ -27,3 +27,9 @@ System.out.println(txt.length());
 String txt = "Please locate where 'locate' occurs!";
 System.out.println(txt.indexOf("locate")); // Outputs 7
 ~~~
+* Existem muitos métodos de string disponíveis, por exemplo toUpperCase()e toLowerCase():
+~~~
+String txt = "Hello World";
+System.out.println(txt.toUpperCase());   // Outputs "HELLO WORLD"
+System.out.println(txt.toLowerCase());
+~~~
