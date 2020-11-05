@@ -18,3 +18,12 @@ System.out.println(txt.length());
 
 //saída é 26
 ~~~
+
+# Encontrar um personagem em uma string
+
+* O indexOf()método retorna o índice (a posição) da primeira ocorrência de um texto especificado em uma string (incluindo espaços em branco):
+
+~~~
+String txt = "Please locate where 'locate' occurs!";
+System.out.println(txt.indexOf("locate")); // Outputs 7
+~~~
