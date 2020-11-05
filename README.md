@@ -1,6 +1,6 @@
 # Números Científicos 
 
-Um número de ponto flutuante também pode ser um número científico com um "e" para indicar a potência de 10:
+* Um número de ponto flutuante também pode ser um número científico com um "e" para indicar a potência de 10:
 
 ~~~
 float f1 = 35e3f;
