@@ -16,5 +16,7 @@ Uma String em Java é, na verdade, um objeto que contém métodos que podem real
 
 ~~~
 String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-System.out.println("The length of the txt string is: " + txt.length());
+System.out.println(txt.length());
+
+//saída é 26
 ~~~
