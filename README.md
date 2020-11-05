@@ -35,3 +35,40 @@ String txt = "Hello World";
 System.out.println(txt.toUpperCase());   // Outputs "HELLO WORLD"
 System.out.println(txt.toLowerCase());   // Outputs "Hélio world"
 ~~~
+
+# Classe Math
+
+Math.max ( x, y )
+O método pode ser usado para encontrar o maior valor de x e y :Math.max(x,y)
+
+Exemplo
+Math.max(5, 10);
+
+Math.min ( x, y )
+O método pode ser usado para encontrar o menor valor de de x e y :Math.min(x,y)
+
+Exemplo
+Math.min(5, 10);
+
+Math.sqrt ( x )
+O método retorna a raiz quadrada de x :Math.sqrt(x)
+
+Exemplo
+Math.sqrt(64);
+
+Math.abs ( x )
+O método retorna o valor absoluto (positivo) de x :Math.abs(x)
+
+Exemplo
+Math.abs(-4.7);
+
+Números aleatórios
+Math.random() retorna um número aleatório entre 0,0 (inclusivo) e 1,0 (exclusivo):
+
+Exemplo
+Math.random();
+
+Para obter mais controle sobre o número aleatório, por exemplo, você deseja apenas um número aleatório entre 0 e 100, você pode usar a seguinte fórmula:
+
+Exemplo
+int randomNum = (int)(Math.random() * 101);  // 0 to 100
