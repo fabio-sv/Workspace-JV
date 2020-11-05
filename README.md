@@ -38,10 +38,10 @@ System.out.println(txt.toLowerCase());   // Outputs "Hélio world"
 
 # Classe Math
 
-Math.max ( x, y )
-O método pode ser usado para encontrar o maior valor de x e y :Math.max(x,y)
+## Math.max ( x, y )
+* O método pode ser usado para encontrar o maior valor de x e y :Math.max(x,y)
 
-Exemplo
+
 Math.max(5, 10);
 
 Math.min ( x, y )
