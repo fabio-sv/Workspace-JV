@@ -42,3 +42,10 @@ System.out.println(txt.toLowerCase());   // Outputs "Hélio world"
 
 * O método pode ser usado para encontrar o maior valor de x e y :`Math.max(x,y)`
 
+~~~
+public class MyClass {
+  public static void main(String[] args) {
+    System.out.println(Math.max(5, 10));  //Output 10
+  }
+}
+~~~
