@@ -70,7 +70,7 @@ int randomNum = (int)(Math.random() * 101);  // 0 to 100
 
 * A continueinstrução interrompe uma iteração (no loop), se uma condição especificada ocorrer, e continua com a próxima iteração no loop.
 
-Este exemplo pula o valor de 4:
+>Este exemplo pula o valor de 4:
 
 ~~~
 for (int i = 0; i < 10; i++) {
@@ -81,7 +81,7 @@ for (int i = 0; i < 10; i++) {
 }
 ~~~
 
-Este outro exemplo também pula o valor 4:
+>Este outro exemplo também pula o valor 4:
 
 ~~~
 int i = 0;
