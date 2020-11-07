@@ -11,8 +11,9 @@ public class BubbleSort {
             max = i + 1;
         }
 
-        // bubble sort
+        // percorre o vetor
         for(int j = 0; j < x.length; j++) {
+            // compara os valores da posição anterior com a posterior
             for (int i = 0; i < (max - 1); i ++){
                 if (x[i] > x[i + 1]){
                     int aux = x[i];
