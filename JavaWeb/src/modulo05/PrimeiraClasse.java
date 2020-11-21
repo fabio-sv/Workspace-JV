@@ -1,4 +1,4 @@
-package modulo06;
+package modulo05;
 
 public class PrimeiraClasse {
     public static void main(String[] args) {
