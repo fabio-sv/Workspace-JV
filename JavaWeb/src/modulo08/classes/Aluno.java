@@ -1,12 +1,53 @@
 package modulo08.classes;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+
 public class Aluno {
 
     private String nome;
     private int idade;
-    private int nota1;
-    private int nota2;
-    private int nota3;
+    private String cpf;
+
+    private List<Disciplina> disciplinas = new ArrayList<Disciplina>();
+
+    public List<Disciplina> getDisciplinas() {
+        return disciplinas;
+    }
+
+    public void setDisciplinas(List<Disciplina> disciplinas) {
+        this.disciplinas = disciplinas;
+    }
+
+    public double getMedia (){
+
+       double media = 0;
+        for (Disciplina disciplina : disciplinas){
+            media =+ disciplina.getNota();
+
+        }
+
+        return media;
+    }
+
+    public String getResultadoMedia(){
+
+        String status = "";
+        if (getMedia() >= 50 && getMedia() <= 100){
+            status = "Aprovado";
+
+        } else if (getMedia() < 50 && getMedia() > 0){
+            status = "Reprovado";
+
+        }else {
+            status = "Valor invalido";
+
+        }
+
+        return status;
+    }
+
 
     public String getNome() {
         return nome;
@@ -24,36 +65,12 @@ public class Aluno {
         this.idade = idade;
     }
 
-    public int getNota1() {
-        return nota1;
+    public String getCpf() {
+        return cpf;
     }
 
-    public void setNota1(int nota1) {
-        this.nota1 = nota1;
-    }
-
-    public int getNota2() {
-        return nota2;
-    }
-
-    public void setNota2(int nota2) {
-        this.nota2 = nota2;
-    }
-
-    public int getNota3() {
-        return nota3;
-    }
-
-    public void setNota3(int nota3) {
-        this.nota3 = nota3;
-    }
-
-    public double calcularMedia(int nota1, int nota2, int nota3){
-        this.nota1 = nota1;
-        this.nota2 = nota2;
-        this.nota3 = nota3;
-        double media = (this.nota1 + this.nota2 + this.nota3) / 3;
-        return media;
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     @Override
@@ -61,9 +78,21 @@ public class Aluno {
         return "Aluno{" +
                 "nome='" + nome + '\'' +
                 ", idade=" + idade +
-                ", nota1=" + nota1 +
-                ", nota2=" + nota2 +
-                ", nota3=" + nota3 +
+                ", cpf='" + cpf + '\'' +
+                ", disciplinas=" + disciplinas +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Aluno aluno = (Aluno) o;
+        return cpf.equals(aluno.cpf);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(cpf);
     }
 }

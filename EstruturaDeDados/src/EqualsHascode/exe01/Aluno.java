@@ -1,4 +1,4 @@
-package EqualsHascode;
+package EqualsHascode.exe01;
 
 import java.util.Objects;
 

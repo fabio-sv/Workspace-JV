@@ -1,8 +1,8 @@
-package EqualsHascode;
+package EqualsHascode.exe01;
 
-import java.util.Locale;
+import EqualsHascode.exe01.Aluno;
 
-public class Program {
+public class ProgramAluno {
     public static void main(String[] args) {
 
         Aluno aluno1 = new Aluno();
