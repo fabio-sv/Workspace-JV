@@ -29,9 +29,11 @@ public class ProgramaAluno {
             aluno1.getDisciplinas().add(disciplina);
         }
 
-        System.out.println(aluno1.toString());
+        aluno1.getMedia();
 
-       JOptionPane.showMessageDialog(null,"Media " + aluno1.getMedia() + " " + aluno1.getResultadoMedia() );
+
+       JOptionPane.showMessageDialog(null,"Média final " + aluno1.getMedia()
+               + ". Aluno(a) " + aluno1.getNome() + " está " + aluno1.getResultadoMedia() + "!" );
 
 
 
