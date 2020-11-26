@@ -19,25 +19,29 @@ public class ProgramaAluno {
         aluno1.setCpf(cpf);
 
         for (int i = 1; i <= 4; i++){
-            String nomeDisciplina = JOptionPane.showInputDialog("Disciplina " + i);
-            String nota = JOptionPane.showInputDialog("Nota");
+            String nomeDisciplina = JOptionPane.showInputDialog("Nome da disciplina " + i + "?");
+            String nota = JOptionPane.showInputDialog("Nota da disciplina " + i + "?");
 
             Disciplina disciplina = new Disciplina();
             disciplina.setDisciplina(nomeDisciplina);
-            disciplina.setNota(Integer.valueOf(nota));
+            disciplina.setNota(Double.valueOf(nota));
 
             aluno1.getDisciplinas().add(disciplina);
         }
 
-        aluno1.getMedia();
+        int escolha = JOptionPane.showConfirmDialog(null, "Deseja remover alguma disciplina?");
+
+        if (escolha == 0){
+            String disciplinaRemover = JOptionPane.showInputDialog("Qual a disciplina 1, 2, 3 ou 4?");
+            // remove a displina
+            aluno1.getDisciplinas().remove(Integer.valueOf(disciplinaRemover).intValue() - 1);
+        }
 
 
        JOptionPane.showMessageDialog(null,"Média final " + aluno1.getMedia()
                + ". Aluno(a) " + aluno1.getNome() + " está " + aluno1.getResultadoMedia() + "!" );
 
-
-
-
+        System.out.println(aluno1.toString());
 
     }
 }

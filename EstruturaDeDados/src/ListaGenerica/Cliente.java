@@ -1,9 +1,9 @@
 package ListaGenerica;
 
-public class Disciplina {
+public class Cliente {
 
     private String nome;
-    private byte nota;
+    private String idade;
 
     public String getNome() {
         return nome;
@@ -13,19 +13,19 @@ public class Disciplina {
         this.nome = nome;
     }
 
-    public byte getNota() {
-        return nota;
+    public String getIdade() {
+        return idade;
     }
 
-    public void setNota(byte nota) {
-        this.nota = nota;
+    public void setIdade(String idade) {
+        this.idade = idade;
     }
 
     @Override
     public String toString() {
-        return "Disciplina{" +
+        return "Cliente{" +
                 "nome='" + nome + '\'' +
-                ", nota=" + nota +
+                ", idade='" + idade + '\'' +
                 '}';
     }
 }

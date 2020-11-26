@@ -1,7 +1,6 @@
 package modulo08.classes;
 
 
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -22,36 +21,31 @@ public class Aluno {
         this.disciplinas = disciplinas;
     }
 
-    public double getMedia (){
+    public double getMedia() {
 
-       double media = 0;
-        for (Disciplina disciplina : disciplinas){
+        double media = 0;
+        for (Disciplina disciplina : disciplinas) {
             media = media + disciplina.getNota();
-
-            System.out.println(media);
-
         }
         return media / 4;
 
     }
 
-    public String getResultadoMedia(){
+    public String getResultadoMedia() {
 
         String status = "";
-        if (getMedia() >= 50 && getMedia() <= 100){
+        if (getMedia() >= 50 && getMedia() <= 100) {
             status = "aprovado(a)";
 
-        } else if (getMedia() < 50 && getMedia() > 0){
+        } else if (getMedia() < 50 && getMedia() > 0) {
             status = "reprovado(a)";
 
-        }else {
-            status = "Valor invalido";
+        } else {
+            status = "ERRO";
 
         }
-
         return status;
     }
-
 
     public String getNome() {
         return nome;

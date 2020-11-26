@@ -1,26 +1,26 @@
 package ListaGenerica;
 
+import javax.swing.*;
+import java.util.ArrayList;
+
 public class Program {
+
     public static void main(String[] args) {
 
-        Aluno aluno = new Aluno();
+        ArrayList<Cliente> clientes = new ArrayList<Cliente>();
 
-        aluno.setNome("Jone");
-        aluno.setCpf("854.842.365.40");
+       for(int i = 0; i <= 4; i++){
 
-        Disciplina disciplina1 = new Disciplina();
-        disciplina1.setNome("Banco de dados");
-        disciplina1.setNota((byte) 80);
-        aluno.getDisciplinas().add(disciplina1);
+           Cliente cliente = new Cliente();
+           String nome = JOptionPane.showInputDialog("Nome");
+           cliente.setNome(nome);
+           String idade = JOptionPane.showInputDialog("Idade");
+           cliente.setIdade(idade);
 
-        Disciplina disciplina2 = new Disciplina();
-        disciplina2.setNome("Algoritmos");
-        disciplina2.setNota((byte) 80);
-        aluno.getDisciplinas().add(disciplina2);
+           clientes.add(cliente);
+       }
 
-        System.out.println(aluno.getMedia());
-        System.out.println(aluno.toString());
-
+        System.out.println(clientes);
 
     }
 }
