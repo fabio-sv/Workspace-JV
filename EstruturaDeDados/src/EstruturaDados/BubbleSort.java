@@ -3,7 +3,7 @@ package EstruturaDados;
 public class BubbleSort {
     public static void main(String[] args) {
 
-        int[] x = {-50, -1, 5, 30};
+        int[] x = {7, -1, 5, 30};
 
         // percorre o vetor
         for(int j = 0; j < x.length; j++) {

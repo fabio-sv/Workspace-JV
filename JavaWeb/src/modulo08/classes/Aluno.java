@@ -86,11 +86,14 @@ public class Aluno {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Aluno aluno = (Aluno) o;
-        return cpf.equals(aluno.cpf);
+        return idade == aluno.idade &&
+                nome.equals(aluno.nome) &&
+                cpf.equals(aluno.cpf) &&
+                disciplinas.equals(aluno.disciplinas);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(cpf);
+        return Objects.hash(nome, idade, cpf, disciplinas);
     }
 }
