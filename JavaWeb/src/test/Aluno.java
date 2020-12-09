@@ -1,11 +1,23 @@
 package test;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Aluno {
 
     private String nome;
     private int idade;
+
+    List<Aluno> alunos = new ArrayList<Aluno>();
+
+    public void setAlunos(List<Aluno> alunos) {
+        this.alunos = alunos;
+    }
+
+    public List<Aluno> getAlunos() {
+        return alunos;
+    }
 
     public String getNome() {
         return nome;
@@ -24,14 +36,6 @@ public class Aluno {
     }
 
     @Override
-    public String toString() {
-        return "Aluno{" +
-                "nome='" + nome + '\'' +
-                ", idade=" + idade +
-                '}';
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -43,5 +47,13 @@ public class Aluno {
     @Override
     public int hashCode() {
         return Objects.hash(nome, idade);
+    }
+
+    @Override
+    public String toString() {
+        return "Aluno{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                '}';
     }
 }
