@@ -2,9 +2,12 @@ package modulo08.program;
 
 import modulo08.classes.Aluno;
 import modulo08.classes.Disciplina;
+import modulo08.constantes.StatusAluno;
 
 import javax.swing.*;
+import java.sql.SQLOutput;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class ProgramaAluno {
@@ -13,6 +16,8 @@ public class ProgramaAluno {
 
         // lista de aluno
         List<Aluno> alunos = new ArrayList<Aluno>();
+
+        HashMap<String, List<Aluno>> map = new HashMap<String, List<Aluno>>();
 
         for (int i = 1; i <= 2; i++) {
 
@@ -61,38 +66,34 @@ public class ProgramaAluno {
             alunos.add(aluno1);
         }
 
-        for (int pos = 0; pos < alunos.size(); pos ++){  // size() tamanho da lista
+        map.put(StatusAluno.Aprovado, new ArrayList<Aluno>());
+        map.put(StatusAluno.Reprovado, new ArrayList<Aluno>());
 
-            Aluno aluno = alunos.get(pos);
+        // lista todos os alunos e os classifica em duas listas, aprovados e reprovados
+        for (Aluno aluno : alunos){
 
-            if (aluno.getNome().equalsIgnoreCase("Joe")){
-
-                Aluno trocar = new Aluno();
-                trocar.setNome("foi torcado");
-
-                Disciplina disciplina = new Disciplina();
-                disciplina.setDisciplina("Java");
-                disciplina.setNota(80);
-
-                trocar.getDisciplinas().add(disciplina);
-
-                alunos.set(pos, trocar);
-                aluno = alunos.get(pos);
+            if(aluno.status().equalsIgnoreCase(StatusAluno.Aprovado)){
+               map.get(StatusAluno.Aprovado).add(aluno);
 
             }
+            else if (aluno.status().equalsIgnoreCase(StatusAluno.Reprovado)){
+                map.get(StatusAluno.Reprovado).add(aluno);
 
-            System.out.println("Aluno " + aluno.getNome());
-            System.out.println("Média do aluno " + aluno.getMedia());
-            System.out.println("Resultado = " + aluno.getResultadoMedia());
-
-            for (Disciplina disciplina : aluno.getDisciplinas()){
-                System.out.println("Disciplina " + disciplina.getDisciplina());
             }
-
-            System.out.println("---------------------------------------------------------------");
 
         }
 
+        // imprime a lista de alunos aprovados
+        System.out.println("---------------Lista dos Aprovados---------------");
+        for (Aluno aluno : map.get(StatusAluno.Aprovado)){
+            System.out.println(aluno.getNome() + " " + aluno.getMedia());
+        }
+
+        // imprime a lista de alunos reprovados
+        System.out.println("---------------Lista dos Reprovados---------------");
+        for (Aluno aluno : map.get(StatusAluno.Reprovado)){
+            System.out.println(aluno.getNome() + " " + aluno.getMedia());
+        }
 
     }
 }

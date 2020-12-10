@@ -1,6 +1,8 @@
 package modulo08.classes;
 
 
+import modulo08.constantes.StatusAluno;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -27,25 +29,26 @@ public class Aluno {
         for (Disciplina disciplina : disciplinas) {
             media = media + disciplina.getNota();
         }
-        return media / 4;
+        return media / disciplinas.size();
 
     }
 
-    public String getResultadoMedia() {
+    // este método retorna o status do aluno
+    public String status() {
 
-        String status = "";
         if (getMedia() >= 50 && getMedia() <= 100) {
-            status = "aprovado(a)";
+            return StatusAluno.Aprovado;
 
         } else if (getMedia() < 50 && getMedia() > 0) {
-            status = "reprovado(a)";
+            return StatusAluno.Reprovado;
 
         } else {
-            status = "ERRO";
+            return StatusAluno.Erro;
 
         }
-        return status;
+
     }
+
 
     public String getNome() {
         return nome;
