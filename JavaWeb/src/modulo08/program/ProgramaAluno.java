@@ -86,13 +86,13 @@ public class ProgramaAluno {
         // imprime a lista de alunos aprovados
         System.out.println("---------------Lista dos Aprovados---------------");
         for (Aluno aluno : map.get(StatusAluno.Aprovado)){
-            System.out.println(aluno.getNome() + " " + aluno.getMedia());
+            System.out.println("Aluno = " + aluno.getNome() + ", Nota = " + aluno.getMedia());
         }
 
         // imprime a lista de alunos reprovados
         System.out.println("---------------Lista dos Reprovados---------------");
         for (Aluno aluno : map.get(StatusAluno.Reprovado)){
-            System.out.println(aluno.getNome() + " " + aluno.getMedia());
+            System.out.println("Aluno = " + aluno.getNome() + ", Nota = " + aluno.getMedia());
         }
 
     }
