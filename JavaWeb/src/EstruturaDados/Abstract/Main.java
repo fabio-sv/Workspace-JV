@@ -1,7 +1,5 @@
 package EstruturaDados.Abstract;
 
-import java.sql.SQLOutput;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -16,7 +14,6 @@ public class Main {
         teste(aluno);
 
         // out -> Pessoa: Joe, Salário : 1500.0
-
 
     }
 
