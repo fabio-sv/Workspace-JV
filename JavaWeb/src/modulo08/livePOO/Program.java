@@ -31,8 +31,7 @@ public class Program {
         venda.getProdutoList().add(produto2);// Não consigo fazer validações
         venda.addProduto(produto3); // posso fazer validações
 
-        System.out.println("Descrição da Venda: " + venda.getDesscricaoVenda() + " e o total: "
-                + venda.totalVenda());
+        System.out.println("Valor da variável total: " + venda.getValorVenda());
 
 
     }

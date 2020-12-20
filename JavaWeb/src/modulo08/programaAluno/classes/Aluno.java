@@ -1,7 +1,7 @@
-package modulo08.classes;
+package modulo08.programaAluno.classes;
 
 
-import modulo08.constantes.StatusAluno;
+import modulo08.programaAluno.constantes.StatusAluno;
 
 import java.util.ArrayList;
 import java.util.List;

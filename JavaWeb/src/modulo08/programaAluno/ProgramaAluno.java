@@ -1,11 +1,10 @@
-package modulo08.program;
+package modulo08.programaAluno;
 
-import modulo08.classes.Aluno;
-import modulo08.classes.Disciplina;
-import modulo08.constantes.StatusAluno;
+import modulo08.programaAluno.classes.Aluno;
+import modulo08.programaAluno.classes.Disciplina;
+import modulo08.programaAluno.constantes.StatusAluno;
 
 import javax.swing.*;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

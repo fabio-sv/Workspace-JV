@@ -18,15 +18,14 @@ public class Venda {
         return produtoList;
     }
 
-    public void addProduto (Produto produto){
+    public void addProduto(Produto produto) {
         this.produtoList.add(produto);
     }
 
-    public double totalVenda (){
+    private double totalVenda() {
         double total = 0;
         for (Produto produto : produtoList) {
             total = total + produto.getValorProduto().doubleValue();
-
         }
         return total;
     }
@@ -64,6 +63,7 @@ public class Venda {
     }
 
     public BigDecimal getValorVenda() {
+        this.valorVenda = BigDecimal.valueOf(totalVenda());
         return valorVenda;
     }
 

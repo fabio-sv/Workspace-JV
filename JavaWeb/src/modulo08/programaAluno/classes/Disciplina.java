@@ -1,6 +1,4 @@
-package modulo08.classes;
-
-import java.util.Objects;
+package modulo08.programaAluno.classes;
 
 public class Disciplina {
 

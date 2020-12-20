@@ -1,4 +1,4 @@
-package modulo08.constantes;
+package modulo08.programaAluno.constantes;
 
 public class StatusAluno {
 
