@@ -1,4 +1,4 @@
-package EstruturaDados;
+package EstruturaDados.Tipos;
 
 
 import javax.swing.*;

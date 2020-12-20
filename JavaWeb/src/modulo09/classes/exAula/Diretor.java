@@ -1,6 +1,6 @@
-package modulo09.classes;
+package modulo09.classes.exAula;
 
-public class Diretor extends Pessoa{
+public class Diretor extends Pessoa {
 
     private  String registroEducacao;
     private int tempoDirecao;

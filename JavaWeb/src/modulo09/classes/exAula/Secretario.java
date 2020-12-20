@@ -1,10 +1,12 @@
-package modulo09.classes;
+package modulo09.classes.exAula;
 
-public class Secretario extends Pessoa{
+public class Secretario extends Pessoa implements PermitirAcesso{
 
     private String registro;
     private String nivelCargo;
     private String experiencia;
+    private String login;
+    private String senha;
 
     public String getRegistro() {
         return registro;
@@ -30,6 +32,22 @@ public class Secretario extends Pessoa{
         this.experiencia = experiencia;
     }
 
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
     @Override
     public String toString() {
         return "Secretario{" +
@@ -44,5 +62,10 @@ public class Secretario extends Pessoa{
                 ", nivelCargo='" + nivelCargo + '\'' +
                 ", experiencia='" + experiencia + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean autenticar() {
+        return login.equals("admim") && senha.equals("admim");
     }
 }

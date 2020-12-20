@@ -1,4 +1,4 @@
-package modulo09.classes;
+package modulo09.classes.exAula;
 
 import java.util.Objects;
 

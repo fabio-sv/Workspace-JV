@@ -1,4 +1,4 @@
-package modulo08.programaAluno;
+package modulo08.programaAluno.program;
 
 import modulo08.programaAluno.classes.Aluno;
 import modulo08.programaAluno.classes.Disciplina;
