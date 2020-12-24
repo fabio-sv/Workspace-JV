@@ -16,6 +16,10 @@ public class Aplication {
         String login = JOptionPane.showInputDialog("Informe o Login");
         String senha = JOptionPane.showInputDialog("Informe a Senha");
 
+        PermitirAcesso secretario = new Secretario();
+
+
+
         // válida a login e senha
         if (login.equalsIgnoreCase("admin") && senha.equalsIgnoreCase("admin")) {
 

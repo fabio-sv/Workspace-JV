@@ -1,4 +1,4 @@
-package EstruturaDados.Interface;
+package EstruturaDados.Interface.ex02;
 
 public abstract class Pessoa {
 

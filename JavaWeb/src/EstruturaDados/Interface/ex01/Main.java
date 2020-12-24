@@ -1,4 +1,4 @@
-package EstruturaDados.Interface;
+package EstruturaDados.Interface.ex01;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class Main {
         aluno1.setSenha("abcd");
 
         System.out.println(aluno1.toString()); // Aluno{nome='Jane', idade=20}
-        System.out.println(aluno1.acesso()); // false
+        System.out.println(aluno1.autenticar()); // false
 
         Aluno aluno2 = new Aluno();
         aluno2.setNome("Jhon");
@@ -19,6 +19,6 @@ public class Main {
         aluno2.setSenha("admim");
 
         System.out.println(aluno2.toString()); // Aluno{nome='Jhon', idade=25}
-        System.out.println(aluno2.acesso()); // true
+        System.out.println(aluno2.autenticar()); // true
     }
 }

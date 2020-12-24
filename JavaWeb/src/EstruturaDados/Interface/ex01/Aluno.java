@@ -1,6 +1,6 @@
-package EstruturaDados.Interface;
+package EstruturaDados.Interface.ex01;
 
-public class Aluno extends Pessoa implements PermitirAcesso{
+public class Aluno extends Pessoa implements PermitirAcesso {
 
     private String login;
     private String senha;
@@ -30,7 +30,7 @@ public class Aluno extends Pessoa implements PermitirAcesso{
     }
 
     @Override // interface sobreescrita
-    public boolean acesso() {
+    public boolean autenticar() {
         return login.equals("admim") && senha.equals("admim");
     }
 }
