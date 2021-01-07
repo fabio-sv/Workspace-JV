@@ -1,6 +1,6 @@
 package EstruturaDados.Interface.ex01;
 
-public interface validar {
+public interface Autenticar {
 
     public boolean validar();
 }

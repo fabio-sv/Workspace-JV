@@ -2,7 +2,7 @@ package EstruturaDados.Interface.ex01;
 
 import javax.swing.*;
 
-public class program {
+public class Program {
     public static void main(String[] args) {
 
         Aluno aluno = new Aluno(); // validação feita através do próprio objeto aluno

@@ -1,6 +1,6 @@
 package EstruturaDados.Interface.ex01;
 
-public class Aluno  implements validar{
+public class Aluno  implements Autenticar {
 
     private String nome;
     private String login;
