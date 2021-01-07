@@ -1,6 +1,6 @@
 package modulo09.classes.exAula;
 
-public class Secretario extends Pessoa implements PermitirAcesso{
+public class Secretario extends Pessoa implements PermitirAcesso {
 
     private String registro;
     private String nivelCargo;

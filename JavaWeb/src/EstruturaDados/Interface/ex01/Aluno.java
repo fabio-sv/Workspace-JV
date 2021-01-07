@@ -1,9 +1,18 @@
 package EstruturaDados.Interface.ex01;
 
-public class Aluno extends Pessoa implements PermitirAcesso {
+public class Aluno  implements validar{
 
+    private String nome;
     private String login;
     private String senha;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
     public String getLogin() {
         return login;
@@ -22,15 +31,7 @@ public class Aluno extends Pessoa implements PermitirAcesso {
     }
 
     @Override
-    public String toString() {
-        return "Aluno{" +
-                "nome='" + nome + '\'' +
-                ", idade=" + idade +
-                '}';
-    }
-
-    @Override // interface sobreescrita
-    public boolean autenticar() {
+    public boolean validar() {
         return login.equals("admim") && senha.equals("admim");
     }
 }
