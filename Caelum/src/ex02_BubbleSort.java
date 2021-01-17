@@ -1,4 +1,4 @@
-public class BubbleSort {
+public class ex02_BubbleSort {
     public static void main(String[] args) {
 
         int[] score = {60, 50, 95, 80, 70};
