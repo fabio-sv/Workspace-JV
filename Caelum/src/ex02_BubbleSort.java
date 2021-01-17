@@ -27,7 +27,6 @@ public class ex02_BubbleSort {
                 }
             }
             if (!isSwap) { // nenhuma troca então encerre a ordenação
-                System.out.println("Dentro isSwap");
                 break;
             }
         }

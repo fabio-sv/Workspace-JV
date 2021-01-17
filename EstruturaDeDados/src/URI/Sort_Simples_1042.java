@@ -2,7 +2,7 @@ package URI;
 
 import java.util.Scanner;
 
-public class Sort_Simples {
+public class Sort_Simples_1042 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -37,7 +37,6 @@ public class Sort_Simples {
         System.out.println(vetor[2] = c);
 
         scanner.close();
-
 
     }
 

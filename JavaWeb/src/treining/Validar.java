@@ -1,2 +1,8 @@
-package treining;public interface Validar {
+package treining;
+
+public interface Validar {
+
+    public boolean validacao ();
+
+
 }
