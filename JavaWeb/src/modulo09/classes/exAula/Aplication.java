@@ -16,14 +16,10 @@ public class Aplication {
         String login = JOptionPane.showInputDialog("Informe o Login");
         String senha = JOptionPane.showInputDialog("Informe a Senha");
 
-        Secretario secretario = new Secretario();
-        secretario.setLogin(login);
-        secretario.setSenha(senha);
-
-
+        PermitirAcesso permitirAcesso = new Secretario(login, senha);
 
         // válida a login e senha
-        if (secretario.autenticar()) {
+        if (new Secretario().autenticar()) { // se true acessa
 
             // lista de aluno
             List<modulo08.programaAluno.classes.Aluno> alunos = new ArrayList<modulo08.programaAluno.classes.Aluno>();
@@ -105,9 +101,8 @@ public class Aplication {
                 System.out.println("Aluno = " + aluno.getNome() + ", Nota = " + aluno.getMedia());
             }
 
-        } else {
+        } else { // se false
             JOptionPane.showMessageDialog(null, "Acesso não permitido");
         }
     }
-
 }
