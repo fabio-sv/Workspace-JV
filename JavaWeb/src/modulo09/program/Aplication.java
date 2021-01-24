@@ -1,8 +1,11 @@
-package modulo09.classes.exAula;
+package modulo09.program;
 
 import modulo08.programaAluno.classes.Aluno;
 import modulo08.programaAluno.classes.Disciplina;
 import modulo08.programaAluno.constantes.StatusAluno;
+import modulo09.classAux.FuncaoAutenticacao;
+import modulo09.interfaces.PermitirAcesso;
+import modulo09.classes.Secretario;
 
 import javax.swing.*;
 import java.util.ArrayList;
@@ -19,7 +22,7 @@ public class Aplication {
         PermitirAcesso permitirAcesso = new Secretario(login, senha);
 
         // válida a login e senha
-        if (new Secretario().autenticar()) { // se true acessa
+        if (new FuncaoAutenticacao(permitirAcesso).auteniticar()) { // se true acessa
 
             // lista de aluno
             List<modulo08.programaAluno.classes.Aluno> alunos = new ArrayList<modulo08.programaAluno.classes.Aluno>();

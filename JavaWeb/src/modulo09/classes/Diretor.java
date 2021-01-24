@@ -1,4 +1,4 @@
-package modulo09.classes.exAula;
+package modulo09.classes;
 
 public class Diretor extends Pessoa {
 

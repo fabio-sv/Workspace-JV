@@ -1,4 +1,4 @@
-package modulo09.classes.exAula;
+package modulo09.interfaces;
 
 // será o contrato de autenticação
 public interface PermitirAcesso {
