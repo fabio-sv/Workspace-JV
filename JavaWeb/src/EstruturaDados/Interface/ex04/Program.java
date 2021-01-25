@@ -11,10 +11,11 @@ public class Program {
         Validador validador = new Player(login, senha);
 
         if (new FuncAutentidador(validador).autenticar()){
+            JOptionPane.showMessageDialog(null, "Acesso liberado");
 
+        } else {
+            JOptionPane.showMessageDialog(null, "Acesso negado");
         }
-
-
 
     }
 }
