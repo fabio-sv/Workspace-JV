@@ -3,7 +3,7 @@ package EstruturaDados.Exception;
 public class NumberFormat {
     public static void main(String[] args) {
 
-        /* NumberFormatException ocorre quando uma variável recebe um valor de tipo diferente
+        /* NumberFormatException ocorre quando uma variável recebe um valor de tipo diferente da declarada
         *
         * var int = double
         * var int = boolean

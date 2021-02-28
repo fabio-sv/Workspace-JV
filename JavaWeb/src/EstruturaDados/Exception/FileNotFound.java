@@ -5,6 +5,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+// erro de arquivo não encontrado
+
 public class FileNotFound {
     public static void main(String[] args) {
 

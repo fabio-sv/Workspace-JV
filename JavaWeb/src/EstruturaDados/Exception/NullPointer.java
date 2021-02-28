@@ -3,9 +3,11 @@ package EstruturaDados.Exception;
 import javax.swing.*;
 
 /* NullPointerException ocorre quando a um erro de conversão de número*/
+//nullPointerException erro de variável ou instância nula
 
 public class NullPointer {
     public static void main(String[] args) {
+
 
         try{
 
