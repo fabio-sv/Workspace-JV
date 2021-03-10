@@ -1,4 +1,4 @@
-package LambdaExpressoes;
+package LambdaExpressoes.Consumer;
 
 import java.util.ArrayList;
 import java.util.function.Consumer;

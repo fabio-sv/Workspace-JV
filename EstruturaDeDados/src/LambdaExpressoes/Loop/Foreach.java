@@ -1,4 +1,4 @@
-package LambdaExpressoes;
+package LambdaExpressoes.Loop;
 
 import java.util.ArrayList;
 
