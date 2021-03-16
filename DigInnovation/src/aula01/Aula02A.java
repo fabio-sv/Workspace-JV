@@ -1,4 +1,4 @@
-package ParadigmaFuncional;
+package aula01;
 
 import java.util.Arrays;
 
