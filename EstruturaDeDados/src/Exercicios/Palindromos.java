@@ -13,12 +13,12 @@ public class Palindromos {
         char[] vetorInverte = new char[txt.length()];
         int aux = 0;
 
-        //inverte o texto
+        //Inverte String
         for (int i = vetorInverte.length - 1; i >= 0; i--) {
             vetorInverte[aux] = txt.charAt(i);
             aux++;
         }
-        //converte Array em String
+        //Converte Array em String
         StringBuilder builder = new StringBuilder();
         for (char i : vetorInverte) {
             builder.append(i);
