@@ -1,26 +1,29 @@
 package Exercicios;
 
-import java.util.ArrayList;
-
 public class NumerosPrimos {
     public static void main(String[] args) {
 
-        numerosPrimos(4);
+        numerosPrimos(100);
 
     }
 
-    public static void numerosPrimos(int valor) {
+    public static void numerosPrimos(int maxSequencia) {
+        int index = 2;
+        while (index <= maxSequencia) {
 
-        int div = valor / 2;
-        boolean aux = false;
+            int div = index / 2;
+            boolean check = false;
 
-        for (int i = 1; i <= div; i++) {
-            if (valor % i == 0) {
-                System.out.println(i);
+            for (int i = 2; i <= div; i++) {
+                if (index % i == 0) {
+                    check = true;
+                }
             }
-
+            if (check == false) {
+                System.out.println(index);
+            }
+            index++;
         }
-
 
     }
 }
