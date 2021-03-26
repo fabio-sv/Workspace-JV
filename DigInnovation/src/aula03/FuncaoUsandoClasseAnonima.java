@@ -1,4 +1,4 @@
-package aula02;
+package aula03;
 
 public class FuncaoUsandoClasseAnonima {
     public static void main(String[] args) {
