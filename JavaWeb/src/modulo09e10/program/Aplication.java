@@ -4,21 +4,24 @@ import modulo08.programaAluno.classes.Aluno;
 import modulo08.programaAluno.classes.Disciplina;
 import modulo08.programaAluno.constantes.StatusAluno;
 import modulo09e10.classAux.FuncaoAutenticacao;
+import modulo09e10.excecao.ExecaoProcessarNota;
 import modulo09e10.interfaces.PermitirAcesso;
 import modulo09e10.classes.Secretario;
 
 import javax.swing.*;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Scanner;
 
 public class Aplication {
-    public static void main(String[] args)  throws Exception {
+    public static void main(String[] args) throws Exception {
 
         try {
 
-            /*File file = new File("lines.txt");
-            Scanner scanner = new Scanner(file);*/
+            lerArquivo();
 
             // senha para iniciar o programa
             String login = JOptionPane.showInputDialog("Informe o Login");
@@ -112,7 +115,7 @@ public class Aplication {
             } else { // se false
                 JOptionPane.showMessageDialog(null, "Acesso não permitido");
             }
-        } catch (Exception erro) {
+        } catch (ExecaoProcessarNota erro) {
 
             StringBuilder builder = new StringBuilder();
 
@@ -128,11 +131,22 @@ public class Aplication {
 
             }
 
-            JOptionPane.showMessageDialog(null, "Erro ao processar notas" + builder.toString());
-        }
-
-        finally {//Sempre é executado ocorrendo erros ou não(usado para fechar banco de dados)
+            JOptionPane.showMessageDialog(null, "Erro ao processar notas(exeção customizada)." + builder.toString());
+        } finally {//Sempre é executado ocorrendo erros ou não(usado para fechar banco de dados)
             JOptionPane.showMessageDialog(null, "Obrigado por aprender Java");
         }
     }
+
+    public static void lerArquivo() throws ExecaoProcessarNota {
+
+        File file = new File("lines.txt");
+        try {
+            Scanner scanner = new Scanner(file);
+        } catch (FileNotFoundException e) {
+            throw new ExecaoProcessarNota(e.getMessage());
+        }
+
+    }
 }
+
+
