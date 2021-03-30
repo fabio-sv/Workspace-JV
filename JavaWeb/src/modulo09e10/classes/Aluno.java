@@ -1,4 +1,4 @@
-package programa.classes;
+package modulo09e10.classes;
 
 import modulo08.programaAluno.classes.Disciplina;
 import modulo08.programaAluno.constantes.StatusAluno;

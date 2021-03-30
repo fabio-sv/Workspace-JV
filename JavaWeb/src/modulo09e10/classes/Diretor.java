@@ -1,4 +1,4 @@
-package programa.classes;
+package modulo09e10.classes;
 
 public class Diretor extends Pessoa {
 

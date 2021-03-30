@@ -1,4 +1,4 @@
-package programa.interfaces;
+package modulo09e10.interfaces;
 
 // será o contrato de autenticação
 public interface PermitirAcesso {

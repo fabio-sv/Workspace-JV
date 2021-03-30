@@ -1,20 +1,16 @@
-package programa.program;
+package modulo09e10.program;
 
-import EstruturaDados.Exception.NullPointer;
 import modulo08.programaAluno.classes.Aluno;
 import modulo08.programaAluno.classes.Disciplina;
 import modulo08.programaAluno.constantes.StatusAluno;
-import programa.classAux.FuncaoAutenticacao;
-import programa.interfaces.PermitirAcesso;
-import programa.classes.Secretario;
+import modulo09e10.classAux.FuncaoAutenticacao;
+import modulo09e10.interfaces.PermitirAcesso;
+import modulo09e10.classes.Secretario;
 
 import javax.swing.*;
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Scanner;
 
 public class Aplication {
     public static void main(String[] args)  throws Exception {
