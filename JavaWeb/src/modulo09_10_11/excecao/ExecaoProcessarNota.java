@@ -1,4 +1,4 @@
-package modulo09e10.excecao;
+package modulo09_10_11.excecao;
 
 public class ExecaoProcessarNota extends Exception{
 

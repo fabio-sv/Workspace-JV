@@ -1,6 +1,6 @@
-package modulo09e10.classAux;
+package modulo09_10_11.classAux;
 
-import modulo09e10.interfaces.PermitirAcesso;
+import modulo09_10_11.interfaces.PermitirAcesso;
 
 public class FuncaoAutenticacao {
 

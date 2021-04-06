@@ -1,6 +1,6 @@
-package modulo09e10.classes;
+package modulo09_10_11.classes;
 
-import modulo09e10.interfaces.PermitirAcesso;
+import modulo09_10_11.interfaces.PermitirAcesso;
 
 public class Secretario extends Pessoa implements PermitirAcesso {
 
