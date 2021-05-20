@@ -96,7 +96,9 @@ public class Aula06 {
             aluno.getDisciplinasList().add(disciplina);
 
         }
-        System.out.println(aluno.toString());
+        for (int i = 0; i < aluno.getNotas().length; i++){
+            System.out.println(aluno.disciplinasList);
+        }
     }
 
 }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DigInnovation/DigInnovation.iml" filepath="$PROJECT_DIR$/DigInnovation/DigInnovation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EstruturaDeDados/src/EstruturaDeDados.iml" filepath="$PROJECT_DIR$/EstruturaDeDados/src/EstruturaDeDados.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EstruturaDeDados/EstruturaDeDados1.iml" filepath="$PROJECT_DIR$/EstruturaDeDados/EstruturaDeDados1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaCompleto/JavaCompleto.iml" filepath="$PROJECT_DIR$/JavaCompleto/JavaCompleto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/JavaWeb.iml" filepath="$PROJECT_DIR$/JavaWeb/JavaWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyDocJava/MyDocJava.iml" filepath="$PROJECT_DIR$/MyDocJava/MyDocJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PaulDeitel/PaulDeitel.iml" filepath="$PROJECT_DIR$/PaulDeitel/PaulDeitel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Workspace-JV.iml" filepath="$PROJECT_DIR$/.idea/Workspace-JV.iml" />
+    </modules>
+  </component>
+</project>
