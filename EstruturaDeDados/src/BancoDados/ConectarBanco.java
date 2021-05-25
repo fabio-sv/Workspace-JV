@@ -7,19 +7,19 @@ public class ConectarBanco {
 
     private static String url = "jdbc:postgresql://localhost:5432/posjava";
     private static String user = "postgres";
-    private static String password = "";
+    private static String password = "admin";
     private static Connection connection = null;
 
     static {
         conectar();
     }
 
-    ConectarBanco(){
+    ConectarBanco() {
         conectar();
     }
 
-    private static void conectar(){
-        if(connection == null){
+    private static void conectar() {
+        if (connection == null) { //primeira conexão
             try {
                 Class.forName("org.postgresql.Diver");
                 connection = DriverManager.getConnection(url, user, password);
@@ -29,7 +29,8 @@ public class ConectarBanco {
             }
         }
     }
-    public static Connection getConnection(){
+
+    public static Connection getConnection() {
         return connection;
     }
 }
