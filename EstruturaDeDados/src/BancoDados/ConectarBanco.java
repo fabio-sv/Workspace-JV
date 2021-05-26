@@ -11,19 +11,31 @@ public class ConectarBanco {
     private static Connection connection = null;
 
     static {
-        conectar();
+        startConnection();
+        closeConnection();
     }
 
     ConectarBanco() {
-        conectar();
+        startConnection();
+        closeConnection();
+
     }
 
-    private static void conectar() {
-        if (connection == null) { //primeira conexão
+    private static void startConnection() {
+        if (connection == null) { // Abre a conexão com o banco
             try {
                 Class.forName("org.postgresql.Diver");
                 connection = DriverManager.getConnection(url, user, password);
                 connection.setAutoCommit(false);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+    private static void closeConnection(){
+        if(connection != null){ // Fecha a conexão com o banco
+            try {
+                connection.close();
             } catch (Exception e) {
                 e.printStackTrace();
             }
